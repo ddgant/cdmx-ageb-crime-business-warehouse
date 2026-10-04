@@ -1,0 +1,22 @@
+{
+  "source": "INEGI DENUE 11/2024 (Ciudad de Mexico, csv), file denue_inegi_09_.csv",
+  "rows_raw_file": 458228,
+  "duplicate_ids_removed": 0,
+  "rows_after_clean": 458228,
+  "coord_quality_counts": {
+    "ok": 458193,
+    "invalid": 35
+  },
+  "null_codigo_act": 0,
+  "per_ocu_distribution": {
+    "0 a 5 personas": 388695,
+    "6 a 10 personas": 31637,
+    "11 a 30 personas": 21994,
+    "31 a 50 personas": 5473,
+    "51 a 100 personas": 4932,
+    "101 a 250 personas": 3221,
+    "251 y más personas": 2276
+  },
+  "latest_fecha_alta": "2024-11",
+  "rule": "cve_ent=09; dedupe by id; coordinates must fall inside the CDMX polygon else flagged invalid (kept, AGEB assigned by DENUE code when it exists)"
+}
