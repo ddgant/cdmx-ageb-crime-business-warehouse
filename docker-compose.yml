@@ -1,0 +1,16 @@
+# Optional: use this if you do not have a local PostgreSQL/PostGIS.
+# Usage: docker compose up -d   (host port comes from PGPORT in .env, default 5432)
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    container_name: cdmx_dw
+    environment:
+      POSTGRES_DB: cdmx_dw
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "${PGPORT:-5432}:5432"
+    volumes:
+      - cdmx_pgdata:/var/lib/postgresql/data
+volumes:
+  cdmx_pgdata:

@@ -1,0 +1,11 @@
+# Raw and processed data are large and come from public sources; see README for download steps
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+.env
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+*.pyc
+.pytest_cache/
