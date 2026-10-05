@@ -1,0 +1,3 @@
+indicator,weights,I,E[I],z (permutation),p (permutation)
+Business density (x) vs crime rate in neighbours (y),Queen,0.1894324598963568,-2.621221737565022e-05,11.918702416431607,0.001
+Business density (x) vs crime rate in neighbours (y),KNN-8,0.1714715255657068,-9.973503823360811e-06,12.490326445154802,0.001
