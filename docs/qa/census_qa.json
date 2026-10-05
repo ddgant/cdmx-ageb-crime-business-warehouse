@@ -1,0 +1,27 @@
+{
+  "source": "INEGI Censo de Poblacion y Vivienda 2020, Principales resultados por AGEB y manzana urbana (Ciudad de Mexico)",
+  "rows_raw_file": 68941,
+  "rows_ageb": 2433,
+  "alcaldias": 16,
+  "pobtot_sum": 9145632,
+  "null_counts": {
+    "POBFEM": 10,
+    "POBMAS": 10,
+    "P_0A2": 27,
+    "P_3A5": 20,
+    "P_6A11": 22,
+    "P_12A14": 23,
+    "P_15A17": 20,
+    "P_18A24": 14,
+    "P_60YMAS": 17,
+    "P_12YMAS": 10,
+    "PEA": 10,
+    "PE_INAC": 12,
+    "POCUPADA": 10,
+    "PDESOCUP": 56,
+    "PROM_OCUP": 10,
+    "GRAPROES": 10
+  },
+  "p_25a59_negative_set_null": 0,
+  "rule": "ENTIDAD=09, MZA=000, AGEB!=0000; '*' and 'N/D' converted to NULL (not zero)"
+}

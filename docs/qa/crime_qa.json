@@ -1,0 +1,42 @@
+{
+  "source": "FGJ Ciudad de Mexico, carpetas de investigacion (datos.cdmx.gob.mx), file carpetasFGJ_acumulado_2025_01.csv",
+  "year_filter": "year(fecha_hecho) == 2024",
+  "rows_raw_file": 2098743,
+  "rows_in_year": 216965,
+  "excluded_non_criminal_events": 6504,
+  "rows_after_clean": 210461,
+  "missing_coordinates": 12403,
+  "coordinates_outside_cdmx": 51,
+  "rows_with_valid_point": 198007,
+  "null_hour": 219,
+  "share_time_exactly_noon": 0.0826,
+  "share_time_on_round_hour": 0.4446,
+  "distinct_crime_types": 249,
+  "crime_category_counts": {
+    "Robbery": 67741,
+    "Family violence": 35946,
+    "Fraud and extortion": 35762,
+    "Injuries and threats": 30884,
+    "Other offenses": 12348,
+    "Property damage": 10299,
+    "Sexual offenses": 9047,
+    "Drug offenses": 4945,
+    "Homicide": 2167,
+    "Kidnapping and liberty": 1322
+  },
+  "monthly_counts": {
+    "1": 17976,
+    "2": 17936,
+    "3": 19090,
+    "4": 18882,
+    "5": 19602,
+    "6": 18119,
+    "7": 17304,
+    "8": 17691,
+    "9": 16794,
+    "10": 17078,
+    "11": 16048,
+    "12": 13941
+  },
+  "rule": "year by fecha_hecho; 'HECHO NO DELICTIVO' removed; points must be inside CDMX polygon; incidents without a valid point stay in staging but are not loaded to the fact table"
+}

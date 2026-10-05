@@ -1,0 +1,23 @@
+{
+  "source": "INEGI Marco Geoestadistico (Censo 2020), capa AGEB urbano, Ciudad de Mexico",
+  "original_crs": "MEXICO_ITRF_2008_LCC",
+  "stored_crs": "EPSG:4326 (areas computed later in EPSG:32614)",
+  "ageb_polygons": 2431,
+  "invalid_geometries_before_fix": 0,
+  "invalid_geometries_after": 0,
+  "geometry_types": {
+    "Polygon": 2431
+  },
+  "alcaldias": 16,
+  "census_ageb_without_polygon": [
+    {
+      "cvegeo": "0901101101107",
+      "pobtot": 3050
+    },
+    {
+      "cvegeo": "0901201351227",
+      "pobtot": 4058
+    }
+  ],
+  "polygons_without_census_row": 0
+}
